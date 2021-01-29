@@ -33,4 +33,14 @@ public class FizzBuzzSpec {
     public void testFour() {
         assertEquals("4", fb.fizzbuzz(4));
     }
+
+    @Test
+    public void testSeven() {
+        assertEquals("7", fb.fizzbuzz(7));
+    }
+
+    @Test
+    public void testSix() {
+        assertEquals("Fizz", fb.fizzbuzz(6));
+    }
 }

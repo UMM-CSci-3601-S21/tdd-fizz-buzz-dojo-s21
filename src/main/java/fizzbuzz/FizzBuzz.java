@@ -2,19 +2,22 @@ package fizzbuzz;
 
 public class FizzBuzz {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        FizzBuzz fb = new FizzBuzz();
+        for (int i=1; i<=100; ++i) {
+            System.out.println(fb.fizzbuzz(i));
+        }
     }
 
 	public String fizzbuzz(int i) {
-        if (i == 5) {
-            return "Buzz";
+        if (i % 3 == 0 && i % 5 == 0) {
+            return "FizzBuzz";
         }
-        if (i == 3) {
+        if (i % 3 == 0) {
             return "Fizz";
         }
-        if (i == 4) {
-            return Integer.toString(4);
+        if (i % 5 == 0) {
+            return "Buzz";
         }
-		return "FizzBuzz";
+        return Integer.toString(i);
 	}
 }
