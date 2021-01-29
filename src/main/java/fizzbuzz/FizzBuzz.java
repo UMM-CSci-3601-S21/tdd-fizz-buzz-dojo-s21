@@ -9,6 +9,9 @@ public class FizzBuzz {
         if (i == 5) {
             return "Buzz";
         }
+        if (i == 3) {
+            return "Fizz";
+        }
 		return "FizzBuzz";
 	}
 }
