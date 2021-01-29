@@ -12,6 +12,9 @@ public class FizzBuzz {
         if (i == 3) {
             return "Fizz";
         }
+        if (i == 4) {
+            return Integer.toString(4);
+        }
 		return "FizzBuzz";
 	}
 }
